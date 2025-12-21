@@ -7,6 +7,12 @@ bare_metal:
     env:
       - APP_ENV
       - BACKEND_PORT
+      - SMTP_HOST
+      - SMTP_PORT
+      - SMTP_FROM
+      - SMTP_USER
+      - SMTP_PASS
+      - SMTP_SECURE
   frontend:
     cmd: pnpm --filter=@maplab-oss/helloworld-frontend dev
     env:
